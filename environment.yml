@@ -1,0 +1,23 @@
+name: occ-env
+
+channels:
+- conda-forge
+
+dependencies:
+- python=3.7
+- conda
+- pip
+- pythonocc-core=7.4.0
+- pip:
+  - flask-bcrypt
+  - flask-restful
+  - Flask-Migrate
+  - pyjwt
+  - Flask-Script
+  - flask_testing
+  - flask-cors
+  - python-dotenv
+  - python-jose
+  - pylint
+  - pylint-flask
+  - pylint-flask-sqlalchemy

@@ -1,14 +1,12 @@
-FROM conda/miniconda3:latest
+FROM continuumio/miniconda3
 
-WORKDIR /data
+ENV CONDA_ENV /home/occ/env
+RUN mkdir -p $CONDA_ENV
+WORKDIR /home/occ/env
 
-# Install conda packages
-RUN conda list 
-#RUN conda update -n base -c defaults conda
-RUN conda install -c dlr-sc pythonocc-core
+COPY environment.yml .
+RUN conda env create -f environment.yml
+SHELL ["conda", "run", "-n", "occ-env", "/bin/bash", "-c"]
 
-COPY /data .
-
-ENTRYPOINT ["python3"]
-
-CMD ["-c","import OCC; print('OCC VERSION:'+ 'OCC.VERSION');"]
+COPY /data/run.py .
+ENTRYPOINT ["conda", "run", "--no-capture-output", "-n", "occ-env", "python", "test.py"]
