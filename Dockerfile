@@ -9,4 +9,5 @@ RUN conda env create -f environment.yml
 SHELL ["conda", "run", "-n", "occ-env", "/bin/bash", "-c"]
 
 COPY /data/test.py .
-ENTRYPOINT ["conda", "run", "--no-capture-output", "-n", "occ-env", "python", "test.py"]
+ENTRYPOINT ["conda", "run", "--no-capture-output", "-n", "occ-env", "python"]
+CMD ["-c","import OCC; print('OCC VERSION:'+ OCC.VERSION);"]

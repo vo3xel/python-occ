@@ -1,3 +1,3 @@
 import OCC
 
-print(OCC.VERSION)
+print('OCC version:'+ OCC.VERSION)
