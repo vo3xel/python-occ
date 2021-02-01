@@ -8,5 +8,5 @@ COPY environment.yml .
 RUN conda env create -f environment.yml
 SHELL ["conda", "run", "-n", "occ-env", "/bin/bash", "-c"]
 
-COPY /data/run.py .
+COPY /data/test.py .
 ENTRYPOINT ["conda", "run", "--no-capture-output", "-n", "occ-env", "python", "test.py"]
