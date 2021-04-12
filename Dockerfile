@@ -1,5 +1,9 @@
 FROM continuumio/miniconda3
 
+RUN apt-get update && apt-get -y install \ 
+    libgl1-mesa-glx \
+	&& rm -rf /var/lib/apt/lists/*
+
 ENV CONDA_ENV /home/occ/env
 RUN mkdir -p $CONDA_ENV
 WORKDIR /home/occ/env
