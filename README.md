@@ -14,4 +14,4 @@ The iDev40 project has received funding from the ECSEL Joint Undertaking (JU) un
 
 This repository is released as publication on Zenodo, if this work is used within other projects it is required to cite this work with the following DOI:
 
-[![DOI](https://zenodo.org/badge/305690623.svg)](https://doi.org/10.5281/zenodo.5163811)
+[![DOI](https://zenodo.org/badge/305690623.svg)](https://zenodo.org/badge/latestdoi/305690623)
