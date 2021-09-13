@@ -5,4 +5,4 @@ channels:
 
 dependencies:
 - python=3.7
-- pythonocc-core=VERSION
+- pythonocc-core=7.5.1
