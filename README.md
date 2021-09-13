@@ -1,4 +1,4 @@
-<img alt="Docker Cloud Build Status" src="https://img.shields.io/docker/cloud/build/vo3xel/raclink-blender-demo">
+<img alt="Docker Cloud Build Status" src="https://img.shields.io/docker/cloud/build/vo3xel/python-occ">
 
 # python-occ
 
