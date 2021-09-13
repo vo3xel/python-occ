@@ -1,2 +1,2 @@
 #!/bin/sh
-(cd .. && sh build.sh)
+sh ./build.sh
