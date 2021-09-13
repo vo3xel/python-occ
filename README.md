@@ -4,6 +4,9 @@
 
 This repro installs PythonOCC module in a docker image.
 
+# Build image
+To build the latest PythonOCC version image, run ```sh ./build.sh```. To build any PythonOCC version image, run ```sh build.sh VERSION_NR```
+
 ## References
 * [Python](https://www.python.org/)
 * [Python OCC](https://github.com/tpaviot/pythonocc-core)
