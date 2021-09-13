@@ -1,6 +1,6 @@
 # python-occ
 
-This repro builds python-occ module in a docker container
+This repro installs PythonOCC module in a docker image.
 
 ## References
 * [Python](https://www.python.org/)
