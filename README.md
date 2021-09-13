@@ -1,3 +1,5 @@
+<img alt="Docker Cloud Build Status" src="https://img.shields.io/docker/cloud/build/vo3xel/raclink-blender-demo">
+
 # python-occ
 
 This repro installs PythonOCC module in a docker image.
